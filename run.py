@@ -13,12 +13,12 @@ if whnd != 0:
 if __name__ == '__main__':
     app = QApplication([])
     app.setApplicationDisplayName('Mine-imator 2.0') #窗口标题
-    app.setWindowIcon(QIcon("./assets/1.png"))
+    app.setWindowIcon(QIcon('1.png'))
     player = QMediaPlayer()
     wgt_video = QVideoWidget()  # 视频显示的widget
     wgt_video.show()
     player.setVideoOutput(wgt_video)  # 视频输出的widget
-    player.setMedia(QMediaContent(QUrl.fromLocalFile(r'./assets/1.mp4')))  # 视频文件路径
+    player.setMedia(QMediaContent(QUrl.fromLocalFile(r'https://rickrollawapp.pafteam.tk/2.webm')))  # 视频文件路径
     player.play()
     app.exec_()
 
